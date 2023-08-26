@@ -16,20 +16,33 @@ main {
     flex-direction: column;
 }
 
+.playArea {
+    width: 50vw;
+}
+
 #scoreboard {
     display: flex;
+    border: 2px solid black;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .title {
     line-height: 0;
 }
 
+.score-container {
+    display: flex;
+    /* width: 85px; */
+}
 .score {
-    width: 85px;
+    width: 80px;
+    background: white;
+    margin: 10px;
 }
 
 .button-container {
-    width: 200px;
+    width: 100%;
     text-align: center;
 }
 
@@ -43,7 +56,9 @@ main {
     /* bottom: 0; */
     right: 30px;
     /* display: none; */
-    visibility: hidden;
+    /* visibility: hidden; */
+    /* width: 10vw; */
+    /* font-size: 10px; */
 }
 
 .close-btn {
