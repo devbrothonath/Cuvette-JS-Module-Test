@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>JS Module Test</title>
   </head>
@@ -17,34 +23,210 @@
           </div>
           <div class="score-container">
             <div class="score">
-              <h3>Computer Score</h3>
-              <p class="c-count">0</p>
+              <h3>COMPUTER<br />SCORE</h3>
+              <p class="count c-count">0</p>
             </div>
             <div class="score">
-              <h3>Your Score</h3>
-              <p class="p-count">0</p>
+              <h3>YOUR<br />SCORE</h3>
+              <p class="count p-count">0</p>
             </div>
           </div>
         </div>
-        <div class="button-container">
-          <button class="rock">ROCK</button>
-          <button class="paper">PAPER</button>
+        <!-- <div class="button-container">
+          <div class="rock">
+            <img src="components/Group2.svg" alt="" class="overlay" srcset="" />
+            <img src="components/icons8-fist-67 1.png" alt="" class="base" srcset="">
+          </div>
+          <hr class="horz" />
+          <div class="paper">
+            <img src="components/Group2.svg" alt="" class="overlay" srcset="" />
+            <img src="components/icons8-fist-67 1.png" alt="" class="base" srcset="">
+          </div>
+          <hr class="angle1" />
+          <hr class="angle2" />
+          <div class="scissor">
+            <img src="components/Group2.svg" alt="" class="overlay" srcset="" />
+            <img src="components/icons8-fist-67 1.png" alt="" class="base" srcset="">
+          </div>
+          <input type="image" id="paper" src="components/Group3.svg">
           <button class="scissor">SCISSORS</button>
+        </div> -->
+        <div class="gameArea">
+          <div class="triangle-container">
+            <button class="corner-button rockBtn">
+              <img src="components/Group2.svg" class="circle" alt="Circle Image" />
+              <!-- <div class="rockCircle purple"></div> -->
+              <img
+                src="components/icons8-fist-67 1s.svg"
+                alt=""
+                class="base rock-img"
+                srcset=""
+              />
+            </button>
+            <button class="corner-button scissorBtn">
+              <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+              <img
+                src="components/17911 1ss.svg"
+                alt=""
+                class="base scissor-img"
+                srcset=""
+              />
+            </button>
+            <button class="corner-button paperBtn">
+              <img src="components/Group1.svg" class="circle" alt="Circle Image" />
+              <img
+                src="components/icons8-hand-64 1s.svg"
+                alt=""
+                class="base paper-img"
+                srcset=""
+              />
+            </button>
+            <div class="triangle-line top-line"></div>
+            <div class="triangle-line left-line"></div>
+            <div class="triangle-line right-line"></div>
+          </div>
         </div>
       </div>
-      <div id="gameRules">
-        <h3>Game Rules</h3>
-        <button class="close-btn">X</button>
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, commodi!</li>
-          <li>Assumenda accusamus debitis adipisci aliquam nostrum ipsum maxime quod. Debitis?</li>
-          <li>Quod quam placeat est esse fuga delectus blanditiis accusamus nihil?</li>
-          <li>Eaque quibusdam commodi mollitia officiis aut consectetur earum magni cum!</li>
-        </ul>
+
+      <div class="second-frame">
+        <div class="ripple-effect">
+          <div class="round circle1"></div>
+          <div class="round circle2"></div>
+          <div class="round circle3"></div>
+          <div class="round circle4"></div>
+        </div>
+        <div class="result-container">
+          <h2>You Win</h2>
+          <h3>Against PC</h3>
+          <button>Play Again</button>
+        </div>
+        <div class="colored-disc">
+          <div class="disc color">
+            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+          </div>
+          <div class="disc white">
+            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
+          </div>
+          <!-- <p>pc picked</p> -->
+        </div>
+        <p class="player">YOU PICKED</p>
+        <p class="computer">PC PICKED</p>
       </div>
-      <div class="corner">
-        <button class="rules">rules</button>
-        <button class="next">next</button>
+
+      <div class="third-frame">
+        <div class="disc1">
+          
+          <div class="disc color">
+            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+          </div>
+          <div class="disc white">
+            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
+          </div>
+          
+        </div>
+        <div class="box1">
+          <h2>You Lose</h2>
+          <h3>Against PC</h3>
+          <button>Play Again</button>
+        </div>
+        <div class="disc2">
+          <div class="rippl-effect">
+            <div class="round circle1"></div>
+            <div class="round circle2"></div>
+            <div class="round circle3"></div>
+            <div class="round circle4"></div>
+          </div>
+          <div class="disc color">
+            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+          </div>
+          <div class="disc white">
+            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+      <div class="fourth-frame">
+        <div class="disc1">
+          <div class="rippl-effect">
+            <div class="round circle1"></div>
+            <div class="round circle2"></div>
+            <div class="round circle3"></div>
+            <div class="round circle4"></div>
+          </div>
+          <div class="disc color">
+            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+          </div>
+          <div class="disc white">
+            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
+          </div>
+          
+        </div>
+        <div class="box1">
+          <h2>You Win</h2>
+          <h3>Against PC</h3>
+          <button>Play Again</button>
+        </div>
+        <div class="disc2">
+          
+          <div class="disc color">
+            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+          </div>
+          <div class="disc white">
+            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+      <div class="fifth-frame">
+        <div class="disc1">
+          <div class="disc color">
+            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+          </div>
+          <div class="disc white">
+            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
+          </div>
+          
+        </div>
+        <div class="box1">
+          <h2>Tie Up</h2>
+          <button>Play Again</button>
+        </div>
+        <div class="disc2">
+          
+          <div class="disc color">
+            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+          </div>
+          <div class="disc white">
+            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-container">
+        <div id="gameRules">
+          <h3>Game Rules</h3>
+          <button class="close-btn">X</button>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, commodi!
+            </li>
+            <li>
+              Assumenda accusamus debitis adipisci aliquam nostrum ipsum maxime
+              quod. Debitis?
+            </li>
+            <li>
+              Quod quam placeat est esse fuga delectus blanditiis accusamus
+              nihil?
+            </li>
+            <li>
+              Eaque quibusdam commodi mollitia officiis aut consectetur earum
+              magni cum!
+            </li>
+          </ul>
+        </div>
+        <div class="corner">
+          <button class="rules">rules</button>
+          <button class="next">next</button>
+        </div>
       </div>
     </main>
     <script src="app.js"></script>
