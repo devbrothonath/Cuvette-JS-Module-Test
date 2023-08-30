@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto:wght@100;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -17,17 +17,17 @@
       <div class="playArea">
         <div id="scoreboard">
           <div class="title">
-            <p>ROCK</p>
-            <p>PAPER</p>
-            <p>SCISSORS</p>
+            <p>rock</p>
+            <p>paper</p>
+            <p>scissors</p>
           </div>
           <div class="score-container">
             <div class="score">
-              <h3>COMPUTER<br />SCORE</h3>
+              <h3>computer<br />score</h3>
               <p class="count c-count">0</p>
             </div>
             <div class="score">
-              <h3>YOUR<br />SCORE</h3>
+              <h3>your<br />score</h3>
               <p class="count p-count">0</p>
             </div>
           </div>
@@ -53,29 +53,28 @@
         </div> -->
         <div class="gameArea">
           <div class="triangle-container">
-            <button class="corner-button rockBtn">
-              <img src="components/Group2.svg" class="circle" alt="Circle Image" />
-              <!-- <div class="rockCircle purple"></div> -->
+            <button data-id="rock" class="corner-button rockBtn">
+              <img src="components/blue_circle.svg" class="circle" alt="Circle Image" />
               <img
-                src="components/icons8-fist-67 1s.svg"
+                src="components/stone_hand.svg"
                 alt=""
                 class="base rock-img"
                 srcset=""
               />
             </button>
-            <button class="corner-button scissorBtn">
-              <img src="components/Group3.svg" class="circle" alt="Circle Image" />
+            <button data-id="scissor" class="corner-button scissorBtn">
+              <img src="components/purple_circle.svg" class="circle" alt="Circle Image" />
               <img
-                src="components/17911 1ss.svg"
+                src="components/scissor_hand.svg"
                 alt=""
                 class="base scissor-img"
                 srcset=""
               />
             </button>
-            <button class="corner-button paperBtn">
-              <img src="components/Group1.svg" class="circle" alt="Circle Image" />
+            <button data-id="paper" class="corner-button paperBtn">
+              <img src="components/yellow_circle.svg" class="circle" alt="Circle Image" />
               <img
-                src="components/icons8-hand-64 1s.svg"
+                src="components/paper_hand.svg"
                 alt=""
                 class="base paper-img"
                 srcset=""
@@ -88,7 +87,7 @@
         </div>
       </div>
 
-      <div class="second-frame">
+      <!-- <div class="second-frame">
         <div class="ripple-effect">
           <div class="round circle1"></div>
           <div class="round circle2"></div>
@@ -107,13 +106,12 @@
           <div class="disc white">
             <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
           </div>
-          <!-- <p>pc picked</p> -->
         </div>
         <p class="player">YOU PICKED</p>
         <p class="computer">PC PICKED</p>
-      </div>
+      </div> -->
 
-      <div class="third-frame">
+      <!-- <div class="third-frame">
         <div class="disc1">
           
           <div class="disc color">
@@ -125,7 +123,7 @@
           
         </div>
         <div class="box1">
-          <h2>You Lose</h2>
+          <h2 class="result"></h2>
           <h3>Against PC</h3>
           <button>Play Again</button>
         </div>
@@ -143,89 +141,42 @@
             <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
           </div>
         </div>
-      </div>
-      <div class="fourth-frame">
-        <div class="disc1">
-          <div class="rippl-effect">
-            <div class="round circle1"></div>
-            <div class="round circle2"></div>
-            <div class="round circle3"></div>
-            <div class="round circle4"></div>
-          </div>
-          <div class="disc color">
-            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
-          </div>
-          <div class="disc white">
-            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
-          </div>
-          
+        <p class="playerPick">YOU PICKED</p>
+        <p class="computerPick">PC PICKED</p>
+      </div> -->
+     
+      <!-- <div class="sixth-frame">
+        <div class="hurray-imgs">
+          <img src="components/stars.svg" alt="stars" srcset="">
+          <img class="trophy" src="components/trophy.svg" alt="trophy" srcset="">
         </div>
-        <div class="box1">
-          <h2>You Win</h2>
-          <h3>Against PC</h3>
-          <button>Play Again</button>
-        </div>
-        <div class="disc2">
-          
-          <div class="disc color">
-            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
-          </div>
-          <div class="disc white">
-            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
-          </div>
-        </div>
-      </div>
-      <div class="fifth-frame">
-        <div class="disc1">
-          <div class="disc color">
-            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
-          </div>
-          <div class="disc white">
-            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
-          </div>
-          
-        </div>
-        <div class="box1">
-          <h2>Tie Up</h2>
-          <button>Play Again</button>
-        </div>
-        <div class="disc2">
-          
-          <div class="disc color">
-            <img src="components/Group3.svg" class="circle" alt="Circle Image" />
-          </div>
-          <div class="disc white">
-            <img src="components/icons8-fist-67 1s.svg" alt="" srcset="">
-          </div>
-        </div>
-      </div>
+        <h1>hurray!!</h1>
+        <h3>you won the game</h3>
+        <button class="playAgain hurrayPlayBtn" onclick="window.location.reload()">Play Again</button>
+      </div> -->
 
       <div class="rules-container">
-        <div id="gameRules">
+        <div class="gameRules gameRulesBox">
           <h3>Game Rules</h3>
           <button class="close-btn">X</button>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, commodi!
+              <span>Rock beats scissors, scissors beat paper, and paper beats rock.</span>
+            </li>
+            <li class="big">
+              <span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span>
             </li>
             <li>
-              Assumenda accusamus debitis adipisci aliquam nostrum ipsum maxime
-              quod. Debitis?
+              <span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span>
             </li>
             <li>
-              Quod quam placeat est esse fuga delectus blanditiis accusamus
-              nihil?
-            </li>
-            <li>
-              Eaque quibusdam commodi mollitia officiis aut consectetur earum
-              magni cum!
+              <span>If both players lay down the same hand, each player lays down another hand</span>
             </li>
           </ul>
         </div>
         <div class="corner">
           <button class="rules">rules</button>
-          <button class="next">next</button>
+          <button class="next nextBtnRemove nextBtn">next</button>
         </div>
       </div>
     </main>
