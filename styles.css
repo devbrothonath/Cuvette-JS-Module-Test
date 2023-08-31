@@ -574,9 +574,6 @@ li::before {
   right: 10%;
 }
 
-.rippl-effect {
-  /* z-index: -20; */
-}
 
 .fourth-frame {
   position: relative;
@@ -645,6 +642,3 @@ li::before {
   margin: 40px auto 20px auto;
 }
 
-.rockBtn {
-  /* margin-top: 100px; */
-}
