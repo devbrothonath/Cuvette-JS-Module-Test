@@ -4,21 +4,19 @@ body {
   box-sizing: border-box;
   background: #8cc461;
   font-family: "Roboto", sans-serif;
-  /* height: 100vh; */
 }
 
 main {
   width: 100%;
-  /* height: 100%; */
   display: flex;
-  padding-top: 10vh;
-  /* justify-content: center; */
+  padding-top: 9vh;
   align-items: center;
   flex-direction: column;
 }
 
 button {
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .playArea {
@@ -48,7 +46,6 @@ button {
 
 .score-container {
   display: flex;
-  /* width: 85px; */
 }
 .score {
   width: 110px;
@@ -57,7 +54,6 @@ button {
   border-radius: 9px;
   background: #fff;
   text-align: center;
-  /* word-break: break-all; */
 }
 
 .score > h3 {
@@ -73,83 +69,11 @@ button {
 .count {
   color: #252525;
   margin-top: 33px;
-  /* text-align: center; */
   font-family: Roboto;
   font-size: 55px;
   font-style: normal;
   font-weight: 700;
   line-height: 0;
-}
-
-.button-container {
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-
-.rock {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  margin-right: 50px;
-  margin-top: 30px;
-  /* width: 500px; */
-  /* margin: 20px 20px; */
-}
-
-hr {
-  background: rgba(0, 0, 0, 0.64);
-  z-index: -1;
-}
-
-.horz {
-  /* display: inline-block; */
-  position: absolute;
-  width: 90px;
-  height: 10px;
-  top: 60px;
-  right: 300px;
-  /* bottom: 30px; */
-}
-
-.paper {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  /* width: 500px; */
-  /* margin-right: 250px; */
-}
-
-.angle1 {
-  /* display: inline-block; */
-  position: absolute;
-  width: 90px;
-  height: 10px;
-  left: 250px;
-  -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  transform: rotate(60deg);
-}
-.angle2 {
-  position: absolute;
-  right: 250px;
-  width: 90px;
-  height: 10px;
-  -webkit-transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  -o-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  transform: rotate(120deg);
-}
-
-.scissor {
-  margin-top: 20px;
-}
-
-.overlay {
-  width: 115px;
 }
 
 .base {
@@ -190,7 +114,6 @@ hr {
 ul {
   list-style: square;
   padding-left: 30px;
-  /* padding-right: 30px; */
 }
 
 ul li {
@@ -202,7 +125,6 @@ ul li {
 ul li::marker {
   content: "■";
   font-size: 16px;
-  /* padding-top: 20px; */
 }
 
 ul li span {
@@ -212,28 +134,6 @@ ul li span {
   font-weight: 300;
   letter-spacing: 0.8px;
 }
-
-/* .gameRules > ul {
-  list-style: none;
-  padding: 0;
-}
-
-.gameRules > ul > li {
-  padding: 10px 10px 10px 20px;
-  font-family:"Arial Black";
-  font-weight: 500;
-  font-size: 14px;
-}
-
-li::before {
-  background-color: #14CCBB;
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 2px;
-  height: 10px;
-  width: 10px;
-} */
 
 .gameRulesBox {
   display: none;
@@ -250,7 +150,6 @@ li::before {
   height: 50px;
   font-size: 30px;
   line-height: 0%;
-  /* outline: none; */
   top: -15px;
   right: -15px;
 }
@@ -262,11 +161,9 @@ li::before {
   border: 2px solid #fff;
   background: rgba(217, 217, 217, 0);
   color: #fff;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 2.1px;
 }
 
@@ -277,11 +174,9 @@ li::before {
   border: 2px solid #fff;
   background: rgba(217, 217, 217, 0);
   color: #fff;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 2.1px;
 }
 
@@ -299,10 +194,8 @@ li::before {
 .corner-button {
   position: absolute;
   width: 120px;
-  /* height: 100px; */
   border: none;
   background: none;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,32 +205,13 @@ li::before {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  cursor: pointer;
-}
-
-.rockCircle {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(46, 154, 37, 0.39);
-}
-
-.purple {
-  width: 120px;
-  height: 120px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .base {
   position: absolute;
-  /* width: 50%; */
-
-  cursor: pointer;
 }
 
 .rock-img {
-  /* width: 10px; */
   top: 35px;
   left: 35px;
 }
@@ -367,12 +241,11 @@ li::before {
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  /* transform: translateY(10%); */
 }
 
 .triangle-line {
   position: absolute;
-  width: 15px;
+  width: 12px;
   height: 100px;
   background: rgba(0, 0, 0, 0.64);
   z-index: -1;
@@ -396,30 +269,6 @@ li::before {
   transform: rotate(30deg);
 }
 
-.second-frame {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 500px;
-  margin: 100px auto;
-}
-
-.ripple-effect {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  /* margin: 100px auto; */
-  /* background-color: #2d8ac7; */
-}
-
-.ripple-effect p {
-  position: absolute;
-  /* z-index: 10; */
-  font-weight: 700;
-  left: 30%;
-}
-
 .round {
   position: absolute;
   border-radius: 50%;
@@ -427,64 +276,32 @@ li::before {
 }
 
 .circle1 {
-  /* position: absolute; */
   width: 220px;
   height: 220px;
-  /* background-color: tomato; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .circle2 {
-  /* position: absolute; */
   width: 180px;
   height: 180px;
-  /* background-color: rgb(129, 221, 44); */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .circle3 {
-  /* position: absolute; */
   width: 140px;
   height: 140px;
-  /* background-color: rgb(23, 217, 168); */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .circle4 {
-  /* position: absolute; */
   width: 100px;
   height: 100px;
-  /* background-color: rgb(27, 72, 221); */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.result-container {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.colored-disc {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  /* margin: 100px auto; */
-}
-
-.colored-disc p {
-  position: absolute;
-  font-weight: 700;
-  bottom: 0;
 }
 
 .disc {
@@ -495,7 +312,6 @@ li::before {
 .color {
   width: 120px;
   height: 120px;
-  /* background-color: yellow; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -518,13 +334,7 @@ li::before {
   transform: translate(-50%, -50%);
 }
 
-.second-frame p {
-  position: absolute;
-  top: 0;
-  font-weight: 700;
-}
-
-.third-frame p {
+.result-frame p {
   position: absolute;
   top: 14%;
   font-size: 13px;
@@ -542,12 +352,11 @@ li::before {
   right: 2.5%;
 }
 
-.third-frame {
+.result-frame {
   position: relative;
   width: 500px;
   height: 300px;
   margin: 100px auto;
-  /* display: none; */
 }
 
 .box1 {
@@ -558,14 +367,24 @@ li::before {
   transform: translate(-50%, -50%);
 }
 
+.box1 h2 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 26px;
+}
+
+.box1 h3 {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 0;
+  font-weight: 500;
+}
+
 .disc1 {
   position: absolute;
   top: 50%;
   left: 10%;
-  /* z-index: 0; */
-  /* left: 50%; */
-  /* right: 0; */
-  /* transform: translate(50%, -50%); */
 }
 
 .disc2 {
@@ -574,38 +393,19 @@ li::before {
   right: 10%;
 }
 
-
-.fourth-frame {
-  position: relative;
-  width: 500px;
-  height: 300px;
-  margin: 100px auto;
-}
-.fifth-frame {
-  position: relative;
-  width: 500px;
-  height: 300px;
-  margin: 100px auto;
-}
-
-.sixth-frame {
-  /* position: relative; */
-  /* width: 500px; */
-  /* height: 300px; */
-  /* height: 50vh; */
+.hurray-frame {
   margin: 0px auto;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   font-stretch: condensed;
-  /* border: 1px solid black; */
 }
 
 .hurray-imgs {
   position: relative;
 }
 
-.sixth-frame h1 {
+.hurray-frame h1 {
   font-size: 70px;
   letter-spacing: 7px;
   line-height: 50%;
@@ -613,7 +413,7 @@ li::before {
   padding-top: 20px;
 }
 
-.sixth-frame h3 {
+.hurray-frame h3 {
   font-size: 30px;
   letter-spacing: 4px;
   line-height: 10%;
@@ -628,8 +428,7 @@ li::before {
 }
 
 .playAgain {
-  /* margin: 0px auto 0px auto; */
-  padding: 12px 32px;
+  padding: 10px 28px;
   border: none;
   border-radius: 9px;
   color: #6b6b6b;
@@ -641,4 +440,3 @@ li::before {
 .hurrayPlayBtn {
   margin: 40px auto 20px auto;
 }
-
